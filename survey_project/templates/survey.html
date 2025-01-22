@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Survey on AB 1763 and Student Trustees</h1>
+    <p>Welcome to the survey! This survey is for a SSCCC resolution. Please fill out the form below to share your information.</p>  <!-- This is where your description will go -->
+
+    <form action="/submit" method="POST">
+        <label for="college_name">College Name:</label>
+        <input type="text" id="college_name" name="college_name" required><br><br>
+
+        <label for="district_type">Is your college part of:</label><br>
+        <input type="radio" id="multi" name="district_type" value="Multi-College District" required>
+        <label for="multi">Multi-College District</label><br>
+        <input type="radio" id="single" name="district_type" value="Single-College District">
+        <label for="single">Single-College District</label><br><br>
+
+        <label for="ab1763_eligible">Does your district allow student trustees to be eligible under AB 1763?</label><br>
+        <input type="radio" id="yes" name="ab1763_eligible" value="Yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="ab1763_eligible" value="No">
+        <label for="no">No</label><br>
+        <input type="radio" id="unsure" name="ab1763_eligible" value="Unsure">
+        <label for="unsure">Unsure</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
